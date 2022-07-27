@@ -1,4 +1,6 @@
 ﻿
+using July2022.Utilities;
+
 namespace July2022.Pages
 {
     public class Homepage
@@ -10,6 +12,7 @@ namespace July2022.Pages
 
             IWebElement administrationTab = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a"));
             administrationTab.Click();
+            WaitHelpers.WaitToBeClickable(driver, 5, "XPath", "/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a");
 
             //select time and materials
 
