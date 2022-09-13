@@ -190,7 +190,7 @@ namespace Mars_Project.StepDefinitions
         public void ThenTheRecordForEducationShouldBeDeletedSuccesfully()
         {
             string deletedCollege = profileNEducationObj.deletedCollege(driver);
-            Assert.That(deletedCollege != "MG", " record hasn't deleted succesfully");
+            Assert.That(deletedCollege != "JNTU", " record hasn't deleted succesfully");
         }
 
         [When(@"I navigate to change password in the profile")]
@@ -209,7 +209,6 @@ namespace Mars_Project.StepDefinitions
         public void ThenPasswordShouldBeUpdatedSuccessfully()
         {
             //string pwdheader = password.DefaultModal(driver);
-
             //Assert.That(pwdheader = "Change Password", "Password changed successfully");
 
         }
