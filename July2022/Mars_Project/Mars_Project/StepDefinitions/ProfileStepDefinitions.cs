@@ -10,14 +10,7 @@ namespace Mars_Project.StepDefinitions
     [Binding]
     public class ProfileStepDefinitions : CommonDriver
     {
-        [After]
-        public void Dispose()
-        {
-            if (driver != null)
-            {
-                driver.Close();
-            }
-        }
+        
         Login loginPageObj = new Login();
         ProfileNEducation profileNEducationObj = new ProfileNEducation();
         LanguagePage languagepage = new LanguagePage();

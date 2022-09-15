@@ -14,10 +14,13 @@ namespace Mars_Project.Page
         public void LoginSteps(IWebDriver driver)
         {
 
-            //maximise the browser window
             driver.Manage().Window.Maximize();
+
             //navigate to the portal 
             driver.Navigate().GoToUrl("192.168.1.208:5000");
+
+            Thread.Sleep(4000);
+
             try
             {
                 //find and click on  sign in button
