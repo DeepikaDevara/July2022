@@ -1,6 +1,7 @@
 using Mars_Project.Page;
 using Mars_Project.Utilities;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using TechTalk.SpecFlow;
@@ -11,11 +12,11 @@ namespace Mars_Project.StepDefinitions
     public class ProfileStepDefinitions : CommonDriver
     {
         
-        Login loginPageObj = new Login();
-        ProfileNEducation profileNEducationObj = new ProfileNEducation();
-        LanguagePage languagepage = new LanguagePage();
-        PasswordChangePage password = new PasswordChangePage();
-        SkillPage SkillPageobj = new SkillPage();
+        Login loginPageObj = new Login(driver);
+        ProfileNEducation profileNEducationObj = new ProfileNEducation(driver);
+        LanguagePage languagepage = new LanguagePage(driver);
+        PasswordChangePage password = new PasswordChangePage(driver);
+        SkillPage SkillPageobj = new SkillPage(driver);
 
         [Given(@"Login with valid email address and password")]
         public void GivenLoginWithValidEmailAddressAndPassword()

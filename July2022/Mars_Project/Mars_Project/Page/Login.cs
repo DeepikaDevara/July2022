@@ -9,8 +9,14 @@ using System.Threading.Tasks;
 namespace Mars_Project.Page
 
 {
-    internal class Login
+    public class Login
     {
+        IWebDriver Driver;
+        public Login(IWebDriver driver)
+        {
+            Driver = driver;
+        }
+
         public void LoginSteps(IWebDriver driver)
         {
 

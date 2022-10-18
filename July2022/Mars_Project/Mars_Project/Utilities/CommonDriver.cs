@@ -14,8 +14,8 @@ namespace Mars_Project.Utilities
     public class CommonDriver
     {
         public static IWebDriver driver;
-        Login loginPageObj = new Login();
-        ProfileNEducation profile = new ProfileNEducation();
+        Login loginPageObj = new Login(driver);
+        ProfileNEducation profile = new ProfileNEducation(driver);
         [SetUp]
         public void LoginActions()
         {

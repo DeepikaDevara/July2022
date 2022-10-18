@@ -10,6 +10,11 @@ namespace Mars_Project.Page
 {
     public class SkillPage
     {
+        IWebDriver Driver;
+        public SkillPage(IWebDriver driver)
+        {
+            Driver = driver;
+        }
         public void NavigateSkill(IWebDriver driver)
         {
             string SkillTab = "//div/section[2]/div/div/div/div[3]/form/div[1]/a[2]";

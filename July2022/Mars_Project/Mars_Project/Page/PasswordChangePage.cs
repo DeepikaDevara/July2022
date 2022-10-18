@@ -10,6 +10,11 @@ namespace Mars_Project.Page
 {
     public class PasswordChangePage
     {
+        IWebDriver Driver;
+        public PasswordChangePage(IWebDriver driver)
+        {
+            Driver = driver;
+        }
         public string welcomeMessage(IWebDriver driver)
         {
             string welcomeText = "//div/div[1]/div[2]/div/span";

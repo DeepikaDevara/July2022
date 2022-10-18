@@ -11,6 +11,11 @@ namespace Mars_Project.Page
 {
     public class ProfileNEducation
     {
+        IWebDriver Driver;
+        public ProfileNEducation(IWebDriver driver)
+        {
+            Driver = driver;
+        }
         public string welcomeMessage(IWebDriver driver)
         {
             string welcomeText = "//div/div[1]/div[2]/div/span";

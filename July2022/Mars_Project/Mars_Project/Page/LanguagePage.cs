@@ -10,6 +10,11 @@ namespace Mars_Project.Page
 {
     public class LanguagePage
     {
+        IWebDriver Driver;
+        public LanguagePage(IWebDriver driver)
+        {
+            Driver = driver;
+        }
         public void NavigateLanguage(IWebDriver driver)
         {
             string LanguageTab = "//div/section[2]/div/div/div/div[3]/form/div[1]/a[1]";
