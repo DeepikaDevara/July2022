@@ -14,23 +14,7 @@ namespace Mars_Project.Utilities
     public class CommonDriver
     {
         public static IWebDriver driver;
-        Login loginPageObj = new Login(driver);
-        ProfileNEducation profile = new ProfileNEducation(driver);
-        [SetUp]
-        public void LoginActions()
-        {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            loginPageObj.LoginSteps(driver);
-            profile.welcomeMessage(driver);
 
-        }
-
-        [OneTimeTearDown]
-        public void CloseTestRun()
-        {
-            Thread.Sleep(2000);
-            driver.Close();
-        }
+        
     }
 }
